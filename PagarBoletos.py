@@ -6,7 +6,7 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support.select import Select
 from selenium.webdriver.common.by import By
 
-navegador = webdriver.Chrome()
+# navegador = webdriver.Chrome()
 navegador.get("https://auth.netcombo.com.br/web/login.html?client_id=MINHA_CLARO_RESIDENCIAL&redirect_uri=https%3A%2F%2Fminhaclaroresidencial.claro.com.br%2Flogin&response_type=code&scope=openid+minha_net&authMs=UP,EP,DOCP,OTP")
 navegador.find_element(By.XPATH, '//*[@id="login"]').send_keys("USUARIO")
 navegador.find_element(By.XPATH, '//*[@id="password"]').send_keys("SENHA")
